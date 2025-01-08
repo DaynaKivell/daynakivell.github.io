@@ -1,83 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio | Robotics Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">Dayna Kivell | Robotics Engineer</h1>
-            <nav class="nav">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">YourName</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2 class="hero-title">Innovating Robotics for 11 Years</h2>
-            <p class="hero-subtitle">Empowering change and delivering solutions at Q-Bot.</p>
-            <div class="cta">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-            </div>
-        </div>
+  <main>
+    <section id="hero">
+      <h1>Hi, I'm YourName</h1>
+      <p>Frontend Developer | Designer | Problem Solver</p>
+      <a href="#projects" class="cta-button">View My Work</a>
     </section>
 
-    <section id="about" class="section about">
-        <div class="container">
-            <img src="field_service_EU2.jpg" alt="Dayna presenting at a conference" class="about-image">
-            <div class="about-content">
-                <p>
-                    I'm a robotics engineer with over 11 years of experience at Q-Bot, where I led cutting-edge
-                    innovations in robotics for automation and efficiency. My journey has been defined by a passion for
-                    solving complex problems, empowering teams, and advancing technology for real-world impact.
-                </p>
-            </div>
-        </div>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Write a short intro about yourself here.</p>
     </section>
 
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-
-            <div class="project">
-                <img src="q-bot2.png" alt="Q-Bot Robot in action" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Q-Bot Robotics Systems</h3>
-                    <p class="project-description">
-                        Designed and implemented autonomous robots to improve insulation and efficiency in hard-to-reach
-                        spaces. This project revolutionized energy savings for households and commercial properties.
-                    </p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="field_service_EU.jpg" alt="Conference presentation" class="project-image">
-                <div class="project-content">
-                    <h3 class="project-title">Building Positive Work Cultures</h3>
-                    <p class="project-description">
-                        Presented innovative approaches to mental health and wellbeing for front-line service employees,
-                        fostering motivation and productivity in the workplace.
-                    </p>
-                </div>
-            </div>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Description of the project.</p>
+          <a href="https://example.com">View Project</a>
         </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of the project.</p>
+          <a href="https://example.com">View Project</a>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Dayna Kivell. Built with love and passion for robotics. <a href="#">Back to top</a></p>
-        </div>
-    </footer>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 YourName. All Rights Reserved.</p>
+  </footer>
 </body>
-
 </html>
