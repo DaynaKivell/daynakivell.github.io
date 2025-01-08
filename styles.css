@@ -49,12 +49,14 @@ body {
   
   .central-image {
     width: 50px; /* Adjust size as needed */
+    height: auto;
     margin: 0 auto;
     display: block;
   }
   
   .top-image, .bottom-image {
     width: 20px; /* Adjust size as needed */
+    height: auto;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
