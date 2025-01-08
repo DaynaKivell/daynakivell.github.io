@@ -40,6 +40,32 @@ body {
     padding: 100px 20px;
     background: linear-gradient(135deg, #6c63ff, #3b3aaf);
     color: white;
+    position: relative;
+  }
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .central-image {
+    width: 200px; /* Adjust size as needed */
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .top-image, .bottom-image {
+    width: 100px; /* Adjust size as needed */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .top-image {
+    top: -60px; /* Adjust vertical positioning */
+  }
+  
+  .bottom-image {
+    bottom: -60px; /* Adjust vertical positioning */
   }
   
   .cta-button {
