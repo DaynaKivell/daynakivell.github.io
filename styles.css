@@ -48,13 +48,13 @@ body {
   }
   
   .central-image {
-    width: 20px; /* Adjust size as needed */
+    width: 50px; /* Adjust size as needed */
     margin: 0 auto;
     display: block;
   }
   
   .top-image, .bottom-image {
-    width: 10px; /* Adjust size as needed */
+    width: 20px; /* Adjust size as needed */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
