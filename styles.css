@@ -173,7 +173,7 @@ header {
 #contact {
     background: linear-gradient(135deg, #0077ff, #00d2ff); /* Blue gradient */
     color: white;
-    padding: 40px 40px;
+    padding: 20px 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -201,21 +201,21 @@ header {
 #contact input,
 #contact textarea {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #contact button {
-    padding: 12px 20px;
+    padding: 8px 15px;
     background-color: #fff;
     color: #0077ff; /* Primary Blue */
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
