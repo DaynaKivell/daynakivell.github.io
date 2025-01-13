@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -20,32 +22,34 @@
 
   <main>
     <section id="hero">
-        <div class="image-container">
-            <img src="images/bio_image.jpg" alt="Central Image" class="central-image">
-            <img src="images/field_service_EU.jpg" alt="Top Image" class="top-image">
-            <img src="images/field_service_EU2.jpg" alt="Bottom Image" class="bottom-image">
-          </div>
-      <h1>Hi, I'm YourName</h1>
+      <div class="image-container">
+        <img src="images/bio_image.jpg" alt="Central Image" class="central-image">
+        <img src="images/field_service_EU.jpg" alt="Top Image" class="top-image">
+        <img src="images/field_service_EU2.jpg" alt="Bottom Image" class="bottom-image">
+      </div>
+      <h1>Hi, I'm Dayna Kivell</h1>
       <p>Robotics Innovator | Leader | Problem Solver</p>
       <a href="#projects" class="cta-button">View My Work</a>
     </section>
 
     <section id="about">
       <h2>About Me</h2>
-      <p>Write a short intro about yourself here.</p>
+      <p>I'm a passionate robotics professional with over X years of experience building innovative solutions in the robotics space. I lead teams and love solving complex challenges through technology.</p>
+      <!-- Optional Image to humanize the section -->
+      <img src="images/your-photo.jpg" alt="Dayna Kivell" class="about-image">
     </section>
 
     <section id="projects">
       <h2>My Projects</h2>
       <div class="project-grid">
         <div class="project">
-          <h3>Project 1</h3>
-          <p>Description of the project.</p>
+          <h3>Project 1: Robotics Automation</h3>
+          <p>Implemented a fully automated robotic arm for packaging.</p>
           <a href="https://example.com">View Project</a>
         </div>
         <div class="project">
-          <h3>Project 2</h3>
-          <p>Description of the project.</p>
+          <h3>Project 2: AI-Powered Drone</h3>
+          <p>Created a drone that autonomously navigates complex environments.</p>
           <a href="https://example.com">View Project</a>
         </div>
       </div>
@@ -54,32 +58,25 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <p>Feel free to reach out by filling out the form below!</p>
-      <!-- modify this form HTML and place wherever you want your form -->
-        <form
-        action="https://formspree.io/f/mlddzlpn"
-        method="POST"
-        >
-        <label>
-          Your Name:
+      <form action="https://formspree.io/f/mlddzlpn" method="POST">
+        <label>Your Name:
           <input type="text" name="name" required>
-        </label>        
-        <label>
-        Your email:
-        <input type="email" name="email">
         </label>
-        <label>
-        Your message:
-        <textarea name="message"></textarea>
+        <label>Your Email:
+          <input type="email" name="email" required>
         </label>
-<!-- your other form fields go here -->
+        <label>Your Message:
+          <textarea name="message" required></textarea>
+        </label>
         <button type="submit">Send</button>
-</form>
+      </form>
     </section>
-    
+
   </main>
 
   <footer>
     <p>© 2025 Dayna Kivell. All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
