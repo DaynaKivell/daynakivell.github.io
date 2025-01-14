@@ -66,8 +66,8 @@ header {
 }
 
 .nav-links a.active {
-border-bottom: 2px solid #fff; /* Highlight the active link */
-color: #fff; /* Ensure contrast if background color differs */
+  border-bottom: 2px solid #fff; /* Highlight the active link */
+  color: #fff; /* Ensure contrast if background color differs */
 }
 
 /* Hero Section */
@@ -81,118 +81,118 @@ color: #fff; /* Ensure contrast if background color differs */
 }
 
 #hero .image-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .central-image {
-    width: 200px; /* Adjust as needed */
-    height: auto;
-    margin: 0 auto;
-    display: block;
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .top-image, .bottom-image {
-    width: 150px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  width: 150px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .top-image {
-    top: -60px;
+  top: -60px;
 }
 
 .bottom-image {
-    bottom: -60px;
+  bottom: -60px;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #fff;
-    color: #0077ff; /* Primary Blue */
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #fff;
+  color: #0077ff; /* Primary Blue */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #00d2ff; /* Light Blue */
-    color: white;
+  background-color: #00d2ff; /* Light Blue */
+  color: white;
 }
 
 /* About Section */
 #about {
-    padding: 60px 20px;
-    background-color: #fff;
-    text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
 }
 
 #about h2 {
-    font-size: 2.5rem;
-    color: #0077ff; /* Primary Blue */
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #0077ff; /* Primary Blue */
+  margin-bottom: 20px;
 }
 
 #about p {
-    font-size: 1.2rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .about-image {
-    margin-top: 30px;
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    border: 4px solid #0077ff; /* Blue border */
+  margin-top: 30px;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #0077ff; /* Blue border */
 }
 
 /* Projects Section */
 #projects {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
 }
 
 .project {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-    color: #0077ff; /* Primary Blue */
-    margin-bottom: 10px;
+  color: #0077ff; /* Primary Blue */
+  margin-bottom: 10px;
 }
 
 .project p {
-    color: #555;
-    font-size: 1rem;
+  color: #555;
+  font-size: 1rem;
 }
 
 .project a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0077ff; /* Primary Blue */
-    text-decoration: none;
-    font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077ff; /* Primary Blue */
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .project a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #videos {
@@ -290,73 +290,127 @@ color: #fff; /* Ensure contrast if background color differs */
   background-color: #0056b3; /* Darker Blue */
 }
 
-
-
 /* Contact Section */
 #contact {
-    background: linear-gradient(135deg, #0077ff, #00d2ff); /* Blue gradient */
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 40px auto;
+  background: linear-gradient(135deg, #0077ff, #00d2ff); /* Blue gradient */
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 40px auto;
 }
 
 #contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 #contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #contact label {
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
 }
 
 #contact input,
 #contact textarea {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    outline: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #contact button {
-    padding: 8px 15px;
-    background-color: #fff;
-    color: #0077ff; /* Primary Blue */
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  padding: 8px 15px;
+  background-color: #fff;
+  color: #0077ff; /* Primary Blue */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 #contact button:hover {
-    background-color: #00d2ff; /* Light Blue */
-    color: white;
+  background-color: #00d2ff; /* Light Blue */
+  color: white;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #003366; /* Dark Blue */
-    color: white;
-    margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: #003366; /* Dark Blue */
+  color: white;
+  margin-top: 50px;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  #hero {
+    padding: 80px 20px;
+  }
+
+  .central-image {
+    width: 150px;
+  }
+
+  .top-image,
+  .bottom-image {
+    width: 120px;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* Stack projects in a single column */
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr; /* Stack videos in a single column */
+  }
+
+  #contact {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+  }
 }
