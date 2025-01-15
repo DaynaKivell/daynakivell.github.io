@@ -70,6 +70,69 @@ border-bottom: 2px solid #fff; /* Highlight the active link */
 color: #fff; /* Ensure contrast if background color differs */
 }
 
+/* Dropdown Styles */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-link {
+  cursor: pointer;
+}
+
+.nav-links .dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%; /* Positions below the parent link */
+  left: 0;
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+  border-radius: 5px; /* Slightly rounded corners */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /* Keeps it above other elements */
+  width: 200px; /* Optional: Consistent width */
+}
+
+.nav-links .dropdown-menu li {
+  padding: 10px 15px; /* Comfortable spacing */
+  border-bottom: 1px solid #f0f0f0; /* Light gray separator */
+}
+
+.nav-links .dropdown-menu li:last-child {
+  border-bottom: none; /* No separator for the last item */
+}
+
+.nav-links .dropdown-menu a {
+  color: #333333; /* Neutral dark text */
+  text-decoration: none;
+  display: block;
+  font-size: 14px; /* Slightly smaller for dropdown items */
+}
+
+.nav-links .dropdown-menu a:hover {
+  background-color: #f9f9f9; /* Soft gray for hover */
+  color: #000000; /* Stronger text contrast on hover */
+}
+
+/* Show Dropdown on Hover */
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional Smooth Animation */
+.nav-links .dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* Hero Section */
 #hero {
   text-align: center;
@@ -235,6 +298,71 @@ color: #fff; /* Ensure contrast if background color differs */
   font-size: 16px;
   color: #555;
 }
+
+/* Media Articles Section */
+#media-articles {
+  padding: 50px 20px;
+  background-color: #ffffff; /* Clean white background */
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#media-articles h2 {
+  font-size: 2.5rem;
+  color: #0077ff; /* Primary Blue */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#media-articles p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto 30px; /* Center text and give it some space at the bottom */
+  text-align: center;
+}
+
+#media-articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#media-articles li {
+  background-color: #f9f9f9; /* Light gray for each list item */
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#media-articles li:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+#media-articles a {
+  color: #0077ff; /* Primary Blue */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#media-articles a:hover {
+  color: #00d2ff; /* Lighter blue on hover */
+  text-decoration: underline; /* Underline on hover for better interaction */
+}
+
+#media-articles a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 118, 255, 0.5); /* Focus outline for accessibility */
+}
+
 
 /* Section for Projects and Videos */
 #projects-and-videos {
