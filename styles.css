@@ -302,17 +302,17 @@ color: #fff; /* Ensure contrast if background color differs */
 /* Media Articles Section */
 #media-articles {
   padding: 50px 20px;
-  background-color: #ffffff; /* Clean white background */
+  background-color: #ffffff;
   text-align: left;
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #media-articles h2 {
   font-size: 2.5rem;
-  color: #0077ff; /* Primary Blue */
+  color: #0077ff;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -321,47 +321,58 @@ color: #fff; /* Ensure contrast if background color differs */
   font-size: 1.2rem;
   color: #555;
   max-width: 900px;
-  margin: 0 auto 30px; /* Center text and give it some space at the bottom */
+  margin: 0 auto 30px;
   text-align: center;
 }
 
-#media-articles ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-#media-articles li {
-  background-color: #f9f9f9; /* Light gray for each list item */
-  padding: 20px;
-  margin-bottom: 15px;
+.media-item {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#media-articles li:hover {
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+.media-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-#media-articles a {
-  color: #0077ff; /* Primary Blue */
+.media-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.media-item a {
+  color: #0077ff;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-#media-articles a:hover {
-  color: #00d2ff; /* Lighter blue on hover */
-  text-decoration: underline; /* Underline on hover for better interaction */
+.media-item a:hover {
+  color: #00d2ff;
+  text-decoration: underline;
 }
 
-#media-articles a:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 118, 255, 0.5); /* Focus outline for accessibility */
+.media-item p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
 }
+
 
 
 /* Section for Projects and Videos */
