@@ -66,8 +66,8 @@ header {
 }
 
 .nav-links a.active {
-border-bottom: 2px solid #fff; /* Highlight the active link */
-color: #fff; /* Ensure contrast if background color differs */
+  border-bottom: 2px solid #fff; /* Highlight the active link */
+  color: #fff; /* Ensure contrast if background color differs */
 }
 
 /* Dropdown Styles */
@@ -131,6 +131,46 @@ color: #fff; /* Ensure contrast if background color differs */
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Mobile Dropdown Menu - Show on Click (New lines for mobile experience) */
+#media-toggle:focus + #dropdown-menu,
+#media-toggle:active + #dropdown-menu {
+  display: block; /* Shows the dropdown when clicked or focused */
+}
+
+/* Media Dropdown Styling */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack the nav items vertically */
+  }
+
+  .nav-links .dropdown-menu {
+    display: none; /* Keep the dropdown hidden by default on mobile */
+    position: static; /* Make it behave as a normal block element */
+    width: auto; /* Let it take the full width */
+    background-color: #fff; /* White background for clarity */
+    box-shadow: none; /* Remove shadow */
+    padding: 0; /* Adjust padding */
+  }
+
+  /* When dropdown menu is clicked or focused, show it */
+  .nav-links .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+
+  /* Ensure smooth transition */
+  .nav-links .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links .dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 /* Hero Section */
