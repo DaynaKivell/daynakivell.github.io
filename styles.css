@@ -32,7 +32,7 @@ header {
 
 /* Logo Styles */
 .logo a {
-  font-size: 2rem; /* Larger font size */
+  font-size: 1.35rem; /* Larger font size */
   font-weight: bold; /* Bold text */
   color: white; /* White text */
   text-decoration: none; /* No underline */
@@ -48,10 +48,12 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
+  margin: 0; /* Ensure no extra margin on the list */
+  padding: 0;
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 8px;
 }
 
 .nav-links a {
@@ -59,6 +61,8 @@ header {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 0.8rem; /* Reduced font size for links */
+  
 }
 
 .nav-links a:hover {
@@ -551,45 +555,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-/* Existing CSS content here... */
-
-/* For smaller screens (mobile view) */
-@media screen and (max-width: 768px) {
-  /* Adjust the navbar padding */
-  .navbar {
-    padding: 0 10px;
-  }
-
-  /* Reduce the font size of the logo */
-  .logo a {
-    font-size: 1.5rem; /* Smaller logo text */
-  }
-
-  /* Adjust the navigation links for smaller screens */
-  .nav-links {
-    display: block; /* Stack the items vertically */
-    text-align: center; /* Center align the links */
-    padding: 10px 0; /* Add padding between the links */
-  }
-
-  .nav-links li {
-    margin: 5px 0; /* Reduce space between the links */
-  }
-
-  .nav-links a {
-    font-size: 0.9rem; /* Smaller font size for the links */
-    padding: 5px 0; /* Reduce the padding of each link */
-  }
-
-  .nav-links a:hover {
-    border-bottom: 2px solid #fff; /* Keep underline effect on hover */
-  }
-
-  /* Optional: Adjust dropdown for smaller screens */
-  .nav-links .dropdown-menu {
-    position: relative;
-    box-shadow: none; /* Remove shadow for a cleaner look */
-    width: auto;
-  }
 }
