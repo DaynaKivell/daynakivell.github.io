@@ -32,7 +32,7 @@ header {
 
 /* Logo Styles */
 .logo a {
-  font-size: 1.35rem; /* Larger font size */
+  font-size: 1.50rem; /* Larger font size */
   font-weight: bold; /* Bold text */
   color: white; /* White text */
   text-decoration: none; /* No underline */
@@ -61,7 +61,7 @@ header {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 0.8rem; /* Reduced font size for links */
+  font-size: 0.9rem; /* Reduced font size for links */
   
 }
 
