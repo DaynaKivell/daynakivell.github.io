@@ -33,26 +33,56 @@
   
 
   <main>
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <div class="project">
-          <h3>Project 1: Robotics Automation</h3>
-          <p>Implemented a fully automated robotic arm for packaging.</p>
-          <a href="https://example.com">View Project</a>
+    <section id="spraying-robots">
+      <h2>Spraying Robots</h2>
+      <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="slide" id="mk7LV">
+          <img src="images/projects/spraying robot/mk7LV.jpg" alt="Mk7LV Robot">
+          <div class="slide-details">
+            <h3>Mk7 LV (2020–2023)</h3>
+            <p><strong>Your Input:</strong> Provide your specific input here.</p>
+            <p><strong>Achievements:</strong> Highlight achievements here.</p>
+          </div>
         </div>
-        <div class="project">
-          <h3>Project 2: AI-Powered Drone</h3>
-          <p>Created a drone that autonomously navigates complex environments.</p>
-          <a href="https://example.com">View Project</a>
+        <div class="slide" id="mk6">
+          <img src="images/projects/spraying robot/mk7LVPrototype.jpg" alt="Mk7LVPrototype Robot">
+          <div class="slide-details">
+            <h3>Mk6 (2019–2020)</h3>
+            <p><strong>Your Input:</strong> Provide your specific input here.</p>
+            <p><strong>Achievements:</strong> Highlight achievements here.</p>
+          </div>
         </div>
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
       </div>
-    </section>
+    </section>    
   </main>
 
   <footer>
     <p>© 2025 Dayna Kivell. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.slide');
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    function changeSlide(direction) {
+      const slides = document.querySelectorAll('.slide');
+      slideIndex = (slideIndex + direction + slides.length) % slides.length;
+      showSlide(slideIndex);
+    }
+
+    // Show the first slide initially
+    document.addEventListener('DOMContentLoaded', () => showSlide(slideIndex));
+  </script>
 </body>
 
 </html>
