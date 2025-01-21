@@ -148,33 +148,56 @@ color: #fff; /* Ensure contrast if background color differs */
 }
 
 #hero .image-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed for desktop */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0; /* Remove white spaces */
 }
 
-.central-image {
-    width: 200px; /* Adjust as needed */
-    height: auto;
-    margin: 0 auto;
-    display: block;
+#hero .image-container img {
+  width: 100%; /* Ensure images scale */
+  height: auto;
+  object-fit: cover; /* Ensures images look good in grid cells */
 }
 
-.top-image, .bottom-image {
-    width: 150px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+#hero .top-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
-.top-image {
-    top: -60px;
+#hero .top-right {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
-.bottom-image {
-    bottom: -60px;
+#hero .bottom-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
+#hero .bottom-right {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+h1, p {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #hero .image-container {
+    grid-template-columns: 1fr; /* Stack images vertically for smaller screens */
+    grid-template-rows: auto;
+  }
+
+  #hero .image-container img {
+    margin-bottom: 10px; /* Add spacing between images in mobile */
+  }
+}
 .cta-button {
     display: inline-block;
     padding: 12px 25px;
