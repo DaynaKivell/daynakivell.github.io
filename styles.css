@@ -296,13 +296,32 @@ color: #fff; /* Ensure contrast if background color differs */
   margin-bottom: 20px;
 }
 
-#off-the-clock-adventures p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
+/* Flex Container for Side-by-Side Football Images */
+.activity-images {
+  display: flex;
+  justify-content: center; /* Centers the images horizontally */
+  gap: 20px; /* Adds space between the images */
+  margin-top: 30px;
 }
 
-/* Adventure Grid */
+/* Football Image Styling */
+.activity-images img {
+  width: 100%;
+  max-width: 300px; /* Adjust this value to reduce the size similar to bio_close_up */
+  height: auto;
+  object-fit: cover;
+  border-radius: 15%; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Football Images */
+.activity-images img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Adventure Grid (remaining styles for the grid) */
 .adventure-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -310,6 +329,7 @@ color: #fff; /* Ensure contrast if background color differs */
   margin-top: 30px;
 }
 
+/* Adventure Item (no change, just for context) */
 .adventure-item {
   background-color: #fff;
   padding: 20px;
@@ -329,58 +349,8 @@ color: #fff; /* Ensure contrast if background color differs */
   height: auto;
   max-width: 500px;
   margin-bottom: 15px;
-  border-radius: 8px;
+  border-radius: 8px; /* Curve the edges */
 }
-
-.adventure-item h3 {
-  font-size: 1.8rem;
-  color: #0077ff; /* Primary Blue */
-  margin-bottom: 15px;
-}
-
-.adventure-item p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.adventure-item .cta-button {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #0077ff; /* Primary Blue */
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.adventure-item .cta-button:hover {
-  background-color: #00d2ff; /* Light Blue */
-}
-
-/* Responsive Layout for Adventure Items */
-@media (max-width: 768px) {
-  .adventure-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .adventure-item img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .adventure-item h3 {
-    font-size: 1.6rem;
-  }
-
-  .adventure-item p {
-    font-size: 0.9rem;
-  }
-}
-
 
 /* Experience Section */
 #experience {
