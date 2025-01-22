@@ -206,6 +206,8 @@ header + * {
   grid-column: 2; /* Second column */
   grid-row: 2; /* Second row */
   aspect-ratio: 1 / 1; /* A perfect square */
+  object-fit: cover;
+  border-radius: 8px; /* Ensure rounded corners */
 }
 
 #hero .image-container .bottom-right {
@@ -236,6 +238,7 @@ header + * {
   #hero .image-container img {
     width: 100%; /* Make the images fill the container */
     height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
   }
 }
 
@@ -284,7 +287,8 @@ header + * {
   grid-column: 2; /* Second column */
   grid-row: 2; /* Second row */
   aspect-ratio: 1 / 1; /* A perfect square */
-  object-fit: contain; /* Ensures the entire image is visible */
+  object-fit: cover; /* Ensures the entire image is visible */
+  border-radius: 8px; /* Optional rounded corners */
 }
 
 #hero .image-container .bottom-right {
@@ -334,8 +338,10 @@ header + * {
     grid-column: 2; /* Second column */
     grid-row: 2; /* Second row */
     aspect-ratio: 1 / 1; /* A perfect square */
-    object-fit: contain; /* Ensures the entire image is visible */
+    object-fit: cover; /* Ensures the entire image is visible */
+    border-radius: 8px; /* Optional rounded corners */
   }
+  
 
   #hero .image-container .bottom-right {
     grid-column: 3; /* Third column */
