@@ -666,7 +666,7 @@ header + * {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 80px;
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
@@ -697,7 +697,7 @@ header + * {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   
@@ -740,6 +740,63 @@ header + * {
         text-align: center;
     }
   }
+
+    /* Off the Clock Adventures Section */
+    #off-the-clock-adventures {
+      padding: 60px 20px;
+      background-color: #f9f9f9; /* Light gray background */
+      text-align: center;
+    }
+    
+    #off-the-clock-adventures h2 {
+      font-size: 2.5rem;
+      color: #0077ff; /* Primary Blue */
+      margin-bottom: 20px;
+    }
+    
+    /* Flex Container for Side-by-Side Football Images */
+    .activity-image {
+      display: flex;
+      justify-content: center; /* Centers the images horizontally */
+      gap: 5px;  /*Adds space between the images */
+      margin-top: 30px;
+    }
+    
+    /* Football Image Styling */
+    .activity-image img {
+      width: 100%;
+      max-width: 300px; /* Adjust this value to reduce the size similar to bio_close_up */
+      height: auto;
+      object-fit: cover;
+      /*border-radius: 10%;  Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Hover Effect for Football Images */
+    .activity-image img:hover {
+      transform: scale(1.05); /* Slight zoom effect */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    }
+
+    /*wake surfing video*/
+    .activity-video {
+      margin-top: 30px;
+      text-align: center;
+    }
+    
+    .activity-video h3 {
+      font-size: 1.5rem;
+      color: #0077ff; /* Primary Blue */
+      margin-bottom: 10px;
+    }
+    
+    .activity-video p {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 10px;
+    }
+    
 
 footer {
     text-align: center;
