@@ -163,13 +163,10 @@ header + * {
   padding: 0;
 }
 
-
-
-
 /* Hero Section */
 #hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 50px 20px;
   background: linear-gradient(135deg, #0077ff, #00d2ff); /* Blue gradient */
   color: white;
   position: relative;
@@ -177,21 +174,176 @@ header + * {
 }
 
 #hero .image-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px; /* Adjust as needed for desktop */
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0; /* Remove white spaces */
+  grid-template-columns: 2fr 1fr 1fr; /* Define column widths (2 parts, 1 part, 1 part) */
+  grid-template-rows: 1fr 1fr; /* Define row heights */
+  gap: 10px; /* Adds spacing between the images */
+  max-width: 1000px; /* Limit the width of the hero section */
+  margin: 0 auto; /* Center the grid */
 }
 
 #hero .image-container img {
-  width: 100%; /* Ensure images scale */
+  width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures images look good in grid cells */
+  object-fit: cover; /* Ensure images scale properly */
+  border-radius: 8px; /* Optional rounded corners */
 }
+
+/* Specific Image Layout */
+#hero .image-container .top {
+  grid-column: 1 / span 2; /* Spans across both columns */
+  grid-row: 1; /* Top row */
+  aspect-ratio: 16 / 9; /* Maintain a widescreen aspect ratio */
+}
+
+#hero .image-container .bottom-left {
+  grid-column: 1; /* First column */
+  grid-row: 2; /* Second row */
+  aspect-ratio: 4 / 3; /* A squarer aspect ratio */
+}
+
+#hero .image-container .bottom-middle {
+  grid-column: 2; /* Second column */
+  grid-row: 2; /* Second row */
+  aspect-ratio: 1 / 1; /* A perfect square */
+}
+
+#hero .image-container .bottom-right {
+  grid-column: 3; /* Third column */
+  grid-row: 1 / span 2; /* Spans across two rows */
+  aspect-ratio: 3 / 4; /* Portrait-style aspect ratio */
+}
+
+/* Desktop-specific adjustments */
+@media (min-width: 768px) {
+  #hero {
+    padding: 80px 20px; /* Larger padding for desktop */
+  }
+  #hero .image-container {
+    max-width: 80%; /* Ensure images are more compact in desktop view */
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  #hero {
+    padding: 50px 10px; /* Smaller padding on mobile */
+  }
+  #hero .image-container {
+    grid-template-columns: 1fr; /* Stack images vertically */
+    grid-template-rows: repeat(4, auto); /* Each image takes up one row */
+  }
+  #hero .image-container img {
+    width: 100%; /* Make the images fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0077ff, #00d2ff); /* Blue gradient */
+  color: white;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#hero .image-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Larger left column, smaller middle and right columns */
+  grid-template-rows: 1fr 1fr; /* Two rows of equal height */
+  gap: 10px; /* Adds spacing between the images */
+  max-width: 1000px; /* Limit the width of the hero section */
+  margin: 0 auto; /* Center the grid */
+}
+
+#hero .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Default scaling */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Specific Image Layout */
+#hero .image-container .top {
+  grid-column: 1 / span 2; /* Spans across both columns */
+  grid-row: 1; /* Top row */
+  aspect-ratio: 16 / 9; /* Maintain a widescreen aspect ratio */
+}
+
+#hero .image-container .bottom-left {
+  grid-column: 1; /* First column */
+  grid-row: 2; /* Second row */
+  aspect-ratio: 4 / 3; /* A squarer aspect ratio */
+}
+
+#hero .image-container .bottom-middle {
+  grid-column: 2; /* Second column */
+  grid-row: 2; /* Second row */
+  aspect-ratio: 1 / 1; /* A perfect square */
+  object-fit: contain; /* Ensures the entire image is visible */
+}
+
+#hero .image-container .bottom-right {
+  grid-column: 3; /* Third column */
+  grid-row: 1 / span 2; /* Spans across two rows */
+  aspect-ratio: 3 / 4; /* Portrait-style aspect ratio */
+}
+
+/* Desktop-specific adjustments */
+@media (min-width: 768px) {
+  #hero {
+    padding: 80px 20px; /* Larger padding for desktop */
+  }
+  #hero .image-container {
+    max-width: 80%; /* Ensure images are more compact in desktop view */
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  #hero {
+    padding: 50px 10px; /* Smaller padding on mobile */
+  }
+
+  #hero .image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: auto; /* Automatically adjust row heights */
+    gap: 10px; /* Adds spacing between the images */
+    max-width: 100%; /* Ensure it fits on smaller screens */
+  }
+
+  /* Specific Image Layout */
+  #hero .image-container .top {
+    grid-column: 1 / span 2; /* Spans across all columns */
+    grid-row: 1; /* First row */
+    aspect-ratio: 16 / 9; /* Maintain a widescreen aspect ratio */
+  }
+
+  #hero .image-container .bottom-left {
+    grid-column: 1; /* First column */
+    grid-row: 2; /* Second row */
+    aspect-ratio: 4 / 3; /* A squarer aspect ratio */
+  }
+
+  #hero .image-container .bottom-middle {
+    grid-column: 2; /* Second column */
+    grid-row: 2; /* Second row */
+    aspect-ratio: 1 / 1; /* A perfect square */
+    object-fit: contain; /* Ensures the entire image is visible */
+  }
+
+  #hero .image-container .bottom-right {
+    grid-column: 3; /* Third column */
+    grid-row: 1 / span 2; /* Spans across two rows */
+    aspect-ratio: 3 / 4; /* Portrait-style aspect ratio */
+  }
+}
+
 
 
 .cta-button {
