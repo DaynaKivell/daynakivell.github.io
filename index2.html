@@ -14,13 +14,6 @@
       <div class="logo">
         <a href="index.html" class="logo-link">Dayna Kivell</a>
       </div>
-      <!-- Hamburger Button -->
-      <button class="hamburger" aria-label="Toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <!-- Navigation Links -->
       <ul class="nav-links">
         <li><a href="about.html">About</a></li>
         <li class="dropdown">
@@ -62,8 +55,26 @@
     <section id="about">
       <h2>About Me</h2>
       <p>I'm a passionate robotics professional with over X years of experience building innovative solutions in the robotics space. I lead teams and love solving complex challenges through technology.</p>
+      <!-- Optional Image to humanize the section -->
+      <img src="images/your-photo.jpg" alt="Dayna Kivell" class="about-image">
     </section>
-  
+
+    <section id="projects-and-videos">
+      <h2>Explore My Work</h2>
+      <div class="project-video-grid">
+        <div class="project-video-item">
+          <h3>My Experience</h3>
+          <p>Please explore my professional experience in the world of robotics and sustainability.</p>
+          <a href="experience.html" class="cta-button">View Experience</a>
+        </div>
+        <div class="project-video-item">
+          <h3>Featured Videos</h3>
+          <p>Watch videos showcasing my work and engineering solutions in action.</p>
+          <a href="videos.html" class="cta-button">View Videos</a>
+        </div>
+      </div>
+    </section>
+    
     
 
     <section id="contact">
@@ -88,17 +99,6 @@
   <footer>
     <p>© 2025 Dayna Kivell. All Rights Reserved.</p>
   </footer>
-
-  <script> /* For my hambuger menu for smaller screens */
-    document.addEventListener("DOMContentLoaded", function () {
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    });
-  </script>
 </body>
 
 </html>
