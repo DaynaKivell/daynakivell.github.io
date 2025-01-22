@@ -1,18 +1,15 @@
-// scripts.js
-
-// Handle dropdown toggle on mobile
 document.addEventListener('DOMContentLoaded', () => {
     const dropdownLinks = document.querySelectorAll('.dropdown-link');
   
     dropdownLinks.forEach(link => {
       link.addEventListener('click', (e) => {
-        // Prevent default link behavior
+        // Prevent the default link behavior
         e.preventDefault();
-        
-        // Find the dropdown menu for the clicked link
+  
+        // Find the dropdown menu related to the clicked link
         const dropdownMenu = link.nextElementSibling;
   
-        // Toggle the dropdown menu visibility
+        // Toggle the 'active' class to show/hide the dropdown menu
         dropdownMenu.classList.toggle('active');
       });
     });

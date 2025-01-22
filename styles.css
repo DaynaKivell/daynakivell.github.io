@@ -19,7 +19,7 @@ header {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 0; /* Prevent unintended margin */
+  margin: 0;
 }
 
 /* Navbar */
@@ -64,18 +64,16 @@ header {
   border-bottom: 2px solid white;
 }
 
-/* Dropdown Indicator */
-.dropdown-indicator {
-  margin-left: 8px;
-  font-size: 0.8rem;
-}
-
 /* Dropdown Menu */
 .nav-links .dropdown-menu {
   display: none; /* Hide dropdown initially */
+  background-color: #0077ff;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links .dropdown:hover .dropdown-menu {
+/* Show the dropdown menu when active */
+.nav-links .dropdown-menu.active {
   display: block;
 }
 
@@ -89,7 +87,7 @@ header {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1100; /* Ensure it appears above other elements */
+  z-index: 1100;
 }
 
 .hamburger .bar {
@@ -124,48 +122,48 @@ header {
   }
 
   .nav-links li {
-    margin: 10px 0; /* Add spacing between items */
+    margin: 10px 0;
   }
 
   .nav-links a {
-    font-size: 1rem; /* Slightly larger for mobile */
-    text-align: center; /* Center align text */
+    font-size: 1rem;
+    text-align: center;
   }
 
   .navbar {
-    flex-wrap: wrap; /* Allow elements to break into a new row */
+    flex-wrap: wrap;
   }
 
   .logo a {
-    font-size: 1.3rem; /* Slightly smaller logo */
+    font-size: 1.3rem;
   }
 }
 
 /* Mobile-specific Adjustments (Phones) */
 @media (max-width: 480px) {
   header {
-    padding: 1rem 0; /* Reduce header padding */
+    padding: 1rem 0;
   }
 
   .logo a {
-    font-size: 1.1rem; /* Smaller logo for mobile */
+    font-size: 1.1rem;
   }
 
   .nav-links a {
-    font-size: 0.8rem; /* Smaller link text */
+    font-size: 0.8rem;
   }
 
-  /* Dropdown Menu */
   .nav-links .dropdown-menu {
-    width: 100%; /* Dropdown fills the screen width */
+    width: 100%;
   }
 }
 
-/* Fix for white gap below header */
 header + * {
   margin: 0;
   padding: 0;
 }
+
+
 
 
 /* Hero Section */
