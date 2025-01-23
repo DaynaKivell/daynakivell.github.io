@@ -350,6 +350,48 @@ header + * {
   }
 }
 
+/* What I Bring to the Table Section */
+#what-i-bring {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* Light gray background */
+  text-align: center;
+}
+
+#what-i-bring h2 {
+  font-size: 2.5rem;
+  color: #0077ff; /* Primary Blue */
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.skill-item h3 {
+  color: #0077ff; /* Primary Blue */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+
 .cta-button {
     display: inline-block;
     padding: 12px 25px;
@@ -755,47 +797,58 @@ header + * {
     }
     
     /* Flex Container for Side-by-Side Football Images */
-    .activity-image {
-      display: flex;
-      justify-content: center; /* Centers the images horizontally */
-      gap: 5px;  /*Adds space between the images */
-      margin-top: 30px;
-    }
-    
-    /* Football Image Styling */
-    .activity-image img {
-      width: 100%;
-      max-width: 300px; /* Adjust this value to reduce the size similar to bio_close_up */
-      height: auto;
-      object-fit: cover;
-      /*border-radius: 10%;  Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    /* Hover Effect for Football Images */
-    .activity-image img:hover {
-      transform: scale(1.05); /* Slight zoom effect */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-    }
+    /* Flex Container for Side-by-Side Football Images */
+.activity-image {
+  display: flex;
+  justify-content: center; /* Centers the images horizontally */
+  gap: 10px; /* Adds space between the images */
+  margin-top: 30px;
+  flex-wrap: wrap; /* Ensures images wrap to the next line on smaller screens */
+  max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+}
 
-    /*wake surfing video*/
-    .activity-video {
-      margin-top: 30px;
-      text-align: center;
-    }
-    
-    .activity-video h3 {
-      font-size: 1.5rem;
-      color: #0077ff; /* Primary Blue */
-      margin-bottom: 10px;
-    }
-    
-    .activity-video p {
-      font-size: 1rem;
-      color: #555;
-      margin-top: 10px;
-    }
+/* Football Image Styling */
+.activity-image img {
+  width: 100%; /* Makes the image take up the full width of its container */
+  max-width: 300px; /* Limits the maximum size of each image */
+  height: auto; /* Maintains the image aspect ratio */
+  object-fit: cover; /* Ensures the image covers its allocated space without distortion */
+  border-radius: 10%; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Football Images */
+.activity-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+
+/* Wake surfing video */
+.activity-video {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.activity-video h3 {
+  font-size: 1.5rem;
+  color: #0077ff; /* Primary Blue */
+  margin-bottom: 10px;
+}
+
+.activity-video p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.activity-video video {
+  max-width: 100%; /* Ensures the video will fit within its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners to the video */
+}
+
     
 
 footer {
