@@ -1,76 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience - Dayna Kivell</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">
         <a href="index.html" class="logo-link">Dayna Kivell</a>
       </div>
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <!-- Navigation Links -->
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li class="dropdown">
-          <a href="experience.html" class="dropdown-link">Experience</a>
+          <a href="experience.html" class="dropdown-link" data-toggle="dropdown">Experience <span class="dropdown-indicator">▼</span></a>
           <ul class="dropdown-menu">
-            <li><a href="#leadership-and-team-development">Leadership & Team Development</a></li>
-            <li><a href="#technical-innovation-prototyping">Technical Innovation & Prototyping</a></li>
-            <li><a href="#project-management-execution">Project Management & Execution</a></li>
-            <li><a href="#data-driven-decision-making">Data-Driven Decision Making</a></li>
-            <li><a href="#stem-outreach">STEM Outreach</a></li>
+            <li><a href="experience.html#leadership-and-team-development">Leadership & Team Development</a></li>
+            <li><a href="experience.html#technical-innovation-prototyping">Technical Innovation & Prototyping</a></li>
+            <li><a href="experience.html#project-management-execution">Project Management & Execution</a></li>
+            <li><a href="experience.html#data-driven-decision-making">Data-Driven Decision Making</a></li>
+            <li><a href="experience.html#stem-outreach">STEM Outreach</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="videos.html" class="dropdown-link">Media</a>
+          <a href="videos.html" class="dropdown-link" data-toggle="dropdown">Media <span class="dropdown-indicator">▼</span></a>
           <ul class="dropdown-menu">
-            <li><a href="#videos">Videos</a></li>
-            <li><a href="#media-articles">Media Articles</a></li>
-            <li><a href="#papers">Thesis & Papers</a></li>
+            <li><a href="videos.html#videos">Videos</a></li>
+            <li><a href="videos.html#media-articles">Media Articles</a></li>
+            <li><a href="videos.html#papers">Thesis & Papers</a></li>
           </ul>
         </li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
 
-  <main>
-    <section id="leadership-and-team-development">
-      <h2>Leadership and Team Development</h2>
-      <p>Building and managing high-performing engineering teams is a key part of my role. I have mentored and managed engineers from various disciplines, ensuring that we build a collaborative, innovative, and efficient work culture.</p>
-      <p>For example, I led a cross-functional team to develop and deploy robotic systems in multiple regions, ensuring seamless collaboration and continuous learning for team members. This involved tailored training and providing opportunities for growth within the organization.</p>
+<main>
+    <section id="hero">
+      <h1>Professional Experience</h1>
+      <p>Explore the key skills and experiences that define my journey as a leader, innovator, and problem solver in engineering and technology management.</p>
     </section>
 
+    <!-- Leadership & Team Development Section -->
+    <section id="leadership-and-team-development">
+      <h2>Leadership & Team Development</h2>
+      <p>Building and leading high-performing, diverse teams is a cornerstone of my professional journey. I excel at fostering collaboration, nurturing talent, and creating inclusive environments where innovation thrives.</p>
+
+      <div class="example">
+        <h3>Scaling Q-Bot Operations Across Europe</h3>
+        <p><strong>Situation:</strong> As Head of Robot Operations, I was responsible for managing a growing fleet of robots and operational teams across multiple countries.</p>
+        <p><strong>Actions:</strong> My team implemented training programmes for installers, carried out strategic analysis to reduce robot faults, and worked collaboratively to optimise operations.</p>
+        <p><strong>Result:</strong> Achieved a 19% reduction in critical failures and enhanced team cohesion across international markets.</p>
+      </div>
+
+      <div class="example">
+        <h3>Launching the "Robot Guru" Programme</h3>
+        <p><strong>Situation:</strong> Fault rates among robots were creating inefficiencies in operations.</p>
+        <p><strong>Actions:</strong> My team developed and delivered a programme to upskill operational staff, improving fault diagnosis and repair capabilities.</p>
+        <p><strong>Result:</strong> Faults reduced by 33%, improving overall robot performance and customer satisfaction.</p>
+      </div>
+
+      <div class="example">
+        <h3>Diversity & Mentorship Initiatives</h3>
+        <p><strong>Situation:</strong> I recognised the need to build an inclusive and supportive environment within Q-Bot’s growing engineering teams.</p>
+        <p><strong>Actions:</strong> My team and I mentored engineers, promoted internal development, and championed recruitment strategies to bring diverse perspectives into the team.</p>
+        <p><strong>Result:</strong> Cultivated a collaborative, high-performing team where multiple members advanced to senior roles.</p>
+      </div>
+
+    </section>
+
+    <!-- Technical Innovation & Prototyping Section -->
     <section id="technical-innovation-prototyping">
       <h2>Technical Innovation & Prototyping</h2>
-      <p>Driving technical innovation is at the core of my work. I have led multiple prototyping projects to test and refine cutting-edge technologies. These efforts have led to innovative products that have had real-world impacts.</p>
-      <p>In one project, I compared different underfloor insulation techniques, building a test cell to evaluate the effectiveness of various methods. This hands-on, data-driven approach has been instrumental in shaping successful engineering solutions.</p>
+      <p>Driving innovation through prototyping and rapid iteration has been a defining aspect of my career. I thrive on taking ideas from concept to reality, ensuring they meet customer and market demands.</p>
+
+      <div class="example">
+        <h3>Transitioning to Batch Production</h3>
+        <p><strong>Situation:</strong> Q-Bot needed to scale its production from custom-built prototypes to externally manufactured batches.</p>
+        <p><strong>Actions:</strong> My team led the design and testing process, managed quality assurance protocols, and ensured seamless knowledge transfer between internal and external teams.</p>
+        <p><strong>Result:</strong> Delivered the company’s first external batch of robots, meeting customer specifications and timelines.</p>
+      </div>
+
+      <div class="example">
+        <h3>Innovating Robot Hardware Design</h3>
+        <p><strong>Situation:</strong> Q-Bot’s robots required design improvements to address operational inefficiencies.</p>
+        <p><strong>Actions:</strong> My team spearheaded hardware updates and developed sealing retrofits to address recurring faults.</p>
+        <p><strong>Result:</strong> Reduced catastrophic faults by 19%, improving reliability and longevity of the robots.</p>
+      </div>
+
     </section>
 
-    <section id="project-management-execution">
-      <h2>Project Management & Execution</h2>
-      <p>I have successfully managed and delivered multiple complex engineering projects from concept to completion, overseeing timelines, budgets, and technical outcomes. This includes working with diverse teams across software, hardware, and product management to ensure alignment with company goals.</p>
-      <p>One key project was the development of a robot fleet for deployment in Europe. I managed the end-to-end process, from initial concept through to operation, ensuring that the project met all technical and business objectives.</p>
-    </section>
-
+    <!-- Data-Driven Decision Making Section -->
     <section id="data-driven-decision-making">
       <h2>Data-Driven Decision Making</h2>
-      <p>Throughout my career, I have focused on using data to drive decision-making. By analyzing performance metrics and failure data, I have been able to optimize processes and improve product reliability.</p>
-      <p>For instance, by analyzing robot faults, I found that a large percentage could be fixed by training the team, while others required upgrades to the robots themselves. These insights allowed for targeted solutions that improved both the robot performance and operational efficiency.</p>
+      <p>Leveraging data to inform decisions has been key to optimising operations and driving innovation. I specialise in identifying trends and translating insights into actionable strategies.</p>
+
+      <div class="example">
+        <h3>Reducing Robot Faults Through Data Analysis</h3>
+        <p><strong>Situation:</strong> A high rate of faults was affecting robot reliability and customer satisfaction.</p>
+        <p><strong>Actions:</strong> My team analysed fault data to identify patterns, implemented training programmes for field teams, and introduced targeted hardware improvements.</p>
+        <p><strong>Result:</strong> Reduced fault rates by 48%, leading to significant cost savings and improved customer satisfaction.</p>
+      </div>
     </section>
 
+    <!-- STEM Outreach Section -->
     <section id="stem-outreach">
-      <h2>STEM Outreach & Community Engagement</h2>
-      <p>Outside of my professional work, I am passionate about inspiring the next generation of engineers. I actively engage in STEM outreach activities, mentoring young people, and working to break down barriers to entry in engineering fields.</p>
-      <p>My outreach efforts include organizing local workshops, collaborating with schools to bring hands-on robotics experiences to students, and participating in career talks to encourage diverse talent to pursue careers in engineering and technology.</p>
+      <h2>Women in STEM & Outreach</h2>
+      <p>Promoting diversity and inclusion in STEM fields has been a long-standing passion of mine. Through outreach and mentorship, I aim to inspire and support the next generation of innovators, particularly women and underrepresented groups in engineering and technology.</p>
+
+      <div class="example">
+        <h3>Still to do</h3>
+        <p><strong>Situation:</strong> Still to do</p>
+        <p><strong>Actions:</strong> Still to do</p>
+        <p><strong>Result:</strong> Still to do</p>
+      </div>
     </section>
+
   </main>
 
   <footer>
     <p>© 2025 Dayna Kivell. All Rights Reserved.</p>
   </footer>
+
+  <script src="scripts.js"></script> <!-- JavaScript file to handle dropdown toggle -->
 </body>
+
 </html>

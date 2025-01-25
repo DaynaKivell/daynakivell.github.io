@@ -163,86 +163,6 @@ header + * {
   padding: 0;
 }
 
-/* Hero Section */
-#hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #0077ff, #00d2ff); /* Blue gradient */
-  color: white;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-#hero .image-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr; /* Define column widths (2 parts, 1 part, 1 part) */
-  grid-template-rows: 1fr 1fr; /* Define row heights */
-  gap: 10px; /* Adds spacing between the images */
-  max-width: 1000px; /* Limit the width of the hero section */
-  margin: 0 auto; /* Center the grid */
-}
-
-#hero .image-container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Ensure images scale properly */
-  border-radius: 8px; /* Optional rounded corners */
-}
-
-/* Specific Image Layout */
-#hero .image-container .top {
-  grid-column: 1 / span 2; /* Spans across both columns */
-  grid-row: 1; /* Top row */
-  aspect-ratio: 16 / 9; /* Maintain a widescreen aspect ratio */
-}
-
-#hero .image-container .bottom-left {
-  grid-column: 1; /* First column */
-  grid-row: 2; /* Second row */
-  aspect-ratio: 4 / 3; /* A squarer aspect ratio */
-}
-
-#hero .image-container .bottom-middle {
-  grid-column: 2; /* Second column */
-  grid-row: 2; /* Second row */
-  aspect-ratio: 1 / 1; /* A perfect square */
-  object-fit: cover;
-  border-radius: 8px; /* Ensure rounded corners */
-}
-
-#hero .image-container .bottom-right {
-  grid-column: 3; /* Third column */
-  grid-row: 1 / span 2; /* Spans across two rows */
-  aspect-ratio: 3 / 4; /* Portrait-style aspect ratio */
-}
-
-/* Desktop-specific adjustments */
-@media (min-width: 768px) {
-  #hero {
-    padding: 80px 20px; /* Larger padding for desktop */
-  }
-  #hero .image-container {
-    max-width: 80%; /* Ensure images are more compact in desktop view */
-  }
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 480px) {
-  #hero {
-    padding: 50px 10px; /* Smaller padding on mobile */
-  }
-  #hero .image-container {
-    grid-template-columns: 1fr; /* Stack images vertically */
-    grid-template-rows: repeat(4, auto); /* Each image takes up one row */
-  }
-  #hero .image-container img {
-    width: 100%; /* Make the images fill the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional rounded corners */
-  }
-}
-
-
 
 /* Hero Section */
 #hero {
@@ -348,6 +268,58 @@ header + * {
     grid-row: 1 / span 2; /* Spans across two rows */
     aspect-ratio: 3 / 4; /* Portrait-style aspect ratio */
   }
+}
+
+/* About Section */
+#about {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #0077ff;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+#about ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-left: 40px;
+  color: #555;
+  font-size: 1rem;
+}
+
+#about ul li {
+  margin-bottom: 10px;
+}
+
+#about ol {
+  list-style: decimal;
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+  padding-left: 40px;
+  color: #555;
+  font-size: 1rem;
+}
+
+#about ol li {
+  margin-bottom: 20px;
+}
+
+#about ol li strong {
+  color: #0077ff;
 }
 
 /* What I Bring to the Table Section */
@@ -849,7 +821,69 @@ header + * {
   border-radius: 8px; /* Optional: Adds rounded corners to the video */
 }
 
-    
+/* Example Box Styling for Experience */
+.example {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.example h3 {
+  color: #0077ff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.example p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Image Container for Experience */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.example-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments for Experience Section */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section p {
+    font-size: 0.95rem;
+  }
+
+  .example {
+    padding: 15px;
+  }
+
+  .example h3 {
+    font-size: 1.3rem;
+  }
+}
+
 
 footer {
     text-align: center;
