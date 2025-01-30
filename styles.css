@@ -717,70 +717,58 @@ header + * {
     }
   }
 
-    /* Off the Clock Adventures Section */
-    #off-the-clock-adventures {
-      padding: 60px 20px;
-      background-color: #f9f9f9; /* Light gray background */
-      text-align: center;
-    }
-    
-    #off-the-clock-adventures h2 {
-      font-size: 2.5rem;
-      color: #0077ff; /* Primary Blue */
-      margin-bottom: 20px;
-    }
-    
-    /* Flex Container for Side-by-Side Football Images */
-    /* Flex Container for Side-by-Side Football Images */
-.activity-image {
-  display: flex;
-  justify-content: center; /* Centers the images horizontally */
-  gap: 10px; /* Adds space between the images */
-  margin-top: 30px;
-  flex-wrap: wrap; /* Ensures images wrap to the next line on smaller screens */
-  max-width: 100%; /* Ensure the container doesn't exceed the screen width */
-}
-
-/* Football Image Styling */
-.activity-image img {
-  width: 100%; /* Makes the image take up the full width of its container */
-  max-width: 300px; /* Limits the maximum size of each image */
-  height: auto; /* Maintains the image aspect ratio */
-  object-fit: cover; /* Ensures the image covers its allocated space without distortion */
-  border-radius: 10%; /* Optional: Adds rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover Effect for Football Images */
-.activity-image img:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
-
-
-/* Wake surfing video */
-.activity-video {
-  margin-top: 30px;
+  /* Off the Clock Adventures Section */
+#off-the-clock-adventures {
   text-align: center;
+  padding: 20px;
 }
-
-.activity-video h3 {
-  font-size: 1.5rem;
+#off-the-clock-adventures h2 {
+  font-size: 2.5rem;
   color: #0077ff; /* Primary Blue */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.activity-video p {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 10px;
+/* Grid Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: auto auto auto; /* 3 rows */
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.activity-video video {
-  max-width: 100%; /* Ensures the video will fit within its container */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 8px; /* Optional: Adds rounded corners to the video */
+/* Individual Grid Items */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img, .gallery-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Positioning Grid Items */
+.football {
+  grid-column: span 2; /* Spans 2 columns in row 1 */
+}
+
+.drum-solo {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.dune-buggy {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.video {
+  grid-column: span 2; /* Spans 2 columns in row 3 */
+  grid-row: 3;
 }
 
 /* Example Box Styling for Experience */
