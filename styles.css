@@ -859,10 +859,16 @@ header + * {
 }
 
 .example-image {
-  max-width: 100%;
-  height: auto;
+  max-width: 300px;
+  height: auto;     /* Keeps the aspect ratio intact, adjusts height automatically */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: contain; /* Ensures the image covers the container area without distortion */
+  transition: transform 0.3s ease; /* Optional: adds smooth zoom effect on hover */
+}
+
+.example-image:hover {
+  transform: scale(1.05); /* Optional: subtle zoom effect when hovering */
 }
 
 /* Responsive Adjustments for Experience Section */
