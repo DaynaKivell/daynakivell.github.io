@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Dayna Kivell</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" class="logo-link">Dayna Kivell</a>
+      </div>
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="experience.html" class="dropdown-link" data-toggle="dropdown">Experience <span class="dropdown-indicator">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="experience.html#leadership-and-team-development">Leadership & Team Development</a></li>
+            <li><a href="experience.html#technical-innovation-prototyping">Technical Innovation & Prototyping</a></li>
+            <li><a href="experience.html#engineering-intelligence">Engineering Intelligence & Operational Strategy</a></li>
+            <li><a href="experience.html#outreach-and-stem-engagement">Inspiring the Next Generation: Outreach</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="videos.html" class="dropdown-link" data-toggle="dropdown">Media <span class="dropdown-indicator">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="videos.html#videos">Videos</a></li>
+            <li><a href="videos.html#media-articles">Media Articles</a></li>
+            <li><a href="videos.html#papers">Thesis & Papers</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="projects.html" class="dropdown-link" data-toggle="dropdown">Projects <span class="dropdown-indicator">▼</span> </a>
+           <ul class="dropdown-menu">
+              <li><a href="projects.html#motion-intelligence">Motion Intelligence Lab</a></li>
+              <li><a href="projects.html#digital-drum">Digital Drumming Studio</a></li>
+              <li><a href="projects.html#robot-vision">Robot Vision Systems</a></li>
+              <li><a href="projects.html#open-claw">OpenClaw Experiments</a></li>
+           </ul>
+          </li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+<section class="page-header">
+    <h1>Innovation Lab</h1>
+
+    <p>
+        A collection of hands-on technical explorations focused on robotics,
+        embedded systems, AI, automation, and creative software development.
+        Each project is designed to push my understanding through rapid
+        experimentation and real-world implementation.
+    </p>
+</section>
+
+
+<section id="motion-intelligence" class="project-section">
+
+    <div class="project-card">
+
+        <div class="project-tag">
+            MAY 2026
+        </div>
+
+        <h2>Motion Intelligence Lab</h2>
+
+        <p class="project-intro">
+            Building a real-time telemetry pipeline using a SparkFun 9DoF IMU,
+            Raspberry Pi 4, InfluxDB, and Grafana to capture, store, and
+            visualise live motion data.
+        </p>
+
+        <div class="project-image-grid">
+
+            <img src="images/projects/personal projects/motion intelligence/imu.jpg"
+                 alt="SparkFun 9DoF IMU">
+
+            <img src="images/projects/personal projects/motion intelligence/pi4.jpg"
+                 alt="Raspberry Pi 4 Model B">
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Project Overview</h3>
+
+            <p>
+                The aim of this project was to design and build a complete
+                real-time telemetry system capable of streaming live IMU
+                (Inertial Measurement Unit) data into a time-series database
+                and visualising it through live dashboards.
+            </p>
+
+            <p>
+                The project uses a SparkFun 9DoF IMU connected to a
+                Raspberry Pi 4 via serial communication. A Python script
+                running on the Raspberry Pi continuously reads accelerometer
+                and gyroscope data from the sensor, structures the data,
+                and writes it into InfluxDB.
+            </p>
+
+            <p>
+                Grafana is then used to query and visualise the incoming
+                telemetry data in real time.
+            </p>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>System Architecture</h3>
+
+            <p>
+                IMU Sensor → Raspberry Pi → Python Data Processing →
+                InfluxDB → Grafana Dashboard
+            </p>
+
+            <p>
+                The architecture provides a scalable foundation for robotics,
+                telemetry systems, motion tracking, and sensor analytics
+                applications.
+            </p>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Hardware Used</h3>
+
+            <ul>
+                <li>Raspberry Pi 4 Model B</li>
+                <li>SparkFun 9DoF Razor IMU</li>
+                <li>USB Serial Connection</li>
+                <li>MicroSD Card</li>
+                <li>Raspberry Pi OS</li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Software Stack</h3>
+
+            <ul>
+                <li>Python 3</li>
+                <li>PySerial</li>
+                <li>InfluxDB</li>
+                <li>Grafana</li>
+                <li>Linux / Raspberry Pi OS</li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Setup Process</h3>
+
+            <h4>1. Raspberry Pi Setup</h4>
+
+            <p>
+                The Raspberry Pi was updated and configured with Python,
+                pip, and virtual environment support.
+            </p>
+
+<pre><code>sudo apt update
+sudo apt upgrade -y
+sudo apt install -y python3 python3-pip python3-venv
+</code></pre>
+
+            <h4>2. Python Environment</h4>
+
+            <p>
+                A dedicated Python virtual environment was created for
+                the telemetry pipeline.
+            </p>
+
+<pre><code>python3 -m venv imu-env
+source imu-env/bin/activate
+pip install pyserial influxdb
+</code></pre>
+
+            <h4>3. InfluxDB Installation</h4>
+
+            <p>
+                InfluxDB was installed and configured as the project's
+                time-series database.
+            </p>
+
+<pre><code>sudo apt install -y influxdb
+sudo systemctl enable influxdb
+sudo systemctl start influxdb
+</code></pre>
+
+            <p>
+                A dedicated database was then created:
+            </p>
+
+<pre><code>influx
+
+CREATE DATABASE imu_data;
+SHOW DATABASES;
+EXIT;
+</code></pre>
+
+            <h4>4. Grafana Installation</h4>
+
+            <p>
+                Grafana was installed manually using the official Grafana
+                repositories and signing keys.
+            </p>
+
+<pre><code>sudo apt install -y wget gnupg2 ca-certificates
+
+wget -qO- https://apt.grafana.com/gpg.key | \
+gpg --dearmor | \
+sudo tee /usr/share/keyrings/grafana.gpg > /dev/null
+
+echo "deb [signed-by=/usr/share/keyrings/grafana.gpg] \
+https://apt.grafana.com stable main" | \
+sudo tee /etc/apt/sources.list.d/grafana.list
+
+sudo apt update
+sudo apt install -y grafana
+</code></pre>
+
+            <p>
+                Grafana services were then enabled and started:
+            </p>
+
+<pre><code>sudo systemctl enable grafana-server
+sudo systemctl start grafana-server
+</code></pre>
+
+            <h4>5. Grafana Dashboard Access</h4>
+
+<pre><code>http://raspberrypi.local:3000
+</code></pre>
+
+            <p>
+                Default login:
+            </p>
+
+<pre><code>Username: admin
+Password: admin
+</code></pre>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>InfluxDB Configuration</h3>
+
+            <p>
+                Grafana was connected directly to InfluxDB using the
+                following configuration:
+            </p>
+
+            <ul>
+                <li>Data Source: InfluxDB</li>
+                <li>Query Language: InfluxQL</li>
+                <li>URL: http://localhost:8086</li>
+                <li>Database: imu_data</li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Python Data Pipeline</h3>
+
+            <p>
+                The Python script continuously:
+            </p>
+
+            <ul>
+                <li>Reads serial IMU data</li>
+                <li>Parses CSV sensor values</li>
+                <li>Converts values into structured telemetry data</li>
+                <li>Builds InfluxDB JSON payloads</li>
+                <li>Writes live data into the database</li>
+                <li>Outputs debug information to terminal</li>
+            </ul>
+
+            <p>
+                Sensor measurements included:
+            </p>
+
+            <ul>
+                <li>accel_x</li>
+                <li>accel_y</li>
+                <li>accel_z</li>
+                <li>gyro_x</li>
+                <li>gyro_y</li>
+                <li>gyro_z</li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Grafana Dashboard</h3>
+
+            <p>
+                Grafana dashboards were configured to visualise:
+            </p>
+
+            <ul>
+                <li>Accelerometer X/Y/Z data</li>
+                <li>Gyroscope X/Y/Z data</li>
+                <li>Real-time telemetry updates</li>
+                <li>Live sensor behaviour</li>
+            </ul>
+
+            <p>
+                Dashboards were configured with refresh intervals between
+                1–5 seconds for near real-time monitoring.
+            </p>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Engineering Challenges Solved</h3>
+
+            <ul>
+                <li>Resolved InfluxDB v1 vs v2 Python client compatibility issues</li>
+                <li>Configured Grafana repositories and signing keys manually</li>
+                <li>Established stable serial communication through /dev/ttyACM0</li>
+                <li>Resolved missing CLI and service configuration issues</li>
+                <li>Designed and validated a structured telemetry pipeline</li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Current Status</h3>
+
+            <p>
+                The system is now fully operational with live IMU streaming,
+                InfluxDB time-series storage, and active Grafana dashboards
+                visualising accelerometer and gyroscope telemetry data
+                in real time.
+            </p>
+
+        </div>
+
+
+        <div class="project-block">
+
+            <h3>Future Improvements</h3>
+
+            <ul>
+                <li>Support for multiple IMUs using sensor tags</li>
+                <li>Kalman filtering and noise reduction</li>
+                <li>3D orientation and spatial tracking</li>
+                <li>Remote web dashboard access</li>
+                <li>Additional environmental sensors</li>
+                <li>Motion detection and alert systems</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+
+<section id="rhythm-ai" class="project-section">
+
+    <div class="project-card">
+
+        <div class="project-tag">
+            JUNE 2026
+        </div>
+
+        <h2>RhythmAI</h2>
+
+        <p class="project-intro">
+            Combining drumming, software, and automation into an
+            interactive music-learning platform.
+        </p>
+
+        <div class="project-details">
+
+            <div class="project-block">
+                <h3>Focus</h3>
+                <p>
+                    Developing an app capable of saving YouTube links and
+                    automatically converting songs into drum-sheet-style videos.
+                </p>
+            </div>
+
+            <div class="project-block">
+                <h3>Goal</h3>
+                <p>
+                    Explore intelligent music tooling and build a more engaging
+                    way for drummers to learn and practise songs.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="spatial-robotics" class="project-section">
+
+    <div class="project-card">
+
+        <div class="project-tag">
+            JULY 2026
+        </div>
+
+        <h2>Spatial Robotics</h2>
+
+        <p class="project-intro">
+            Robotic perception and motor tracking using ROS,
+            NVIDIA Jetson, and depth-camera systems.
+        </p>
+
+        <div class="project-details">
+
+            <div class="project-block">
+                <h3>Focus</h3>
+                <p>
+                    Integrating motor control with ROS whilst visualising
+                    movement and positioning through depth-camera feedback.
+                </p>
+            </div>
+
+            <div class="project-block">
+                <h3>Goal</h3>
+                <p>
+                    Build a deeper understanding of robotic sensing,
+                    localisation, and autonomous navigation systems.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="autonomous-lab" class="project-section">
+
+    <div class="project-card">
+
+        <div class="project-tag">
+            AUGUST 2026
+        </div>
+
+        <h2>Autonomous Exploration Lab</h2>
+
+        <p class="project-intro">
+            Exploring OpenClaw and autonomous AI systems through
+            creative experimentation and open-ended discovery.
+        </p>
+
+        <div class="project-details">
+
+            <div class="project-block">
+                <h3>Focus</h3>
+                <p>
+                    Setting up and experimenting with the OpenClaw ecosystem
+                    to understand its capabilities and creative potential.
+                </p>
+            </div>
+
+            <div class="project-block">
+                <h3>Goal</h3>
+                <p>
+                    Discover new ways autonomous systems can support
+                    engineering, creativity, and intelligent workflows.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+ <footer>
+        <p>© 2026 Dayna Kivell. All Rights Reserved.</p>
+        <p>Connect with me:</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/dayna-kivell-681b947b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/DaynaKivell" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+      </footer>
+
+    <script src="scripts.js"></script> <!-- JavaScript file to handle dropdown toggle -->
+</body>
+</html>
